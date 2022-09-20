@@ -1,0 +1,16 @@
+body {
+    width: 100%;
+}
+
+header {
+    height: 50px;
+    box-shadow: 0 5px 5px gray;
+    #logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            height: 40px;
+        }
+    }
+}
