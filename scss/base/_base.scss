@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('../../fonts/Shrikhand-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
 body {
     width: 100%;
+    font-family: Roboto;
 }
 
 header {
