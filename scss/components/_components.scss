@@ -1,0 +1,40 @@
+.instruction-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__number {
+        $number-size: 25px;
+        background-color: $secondary-color;
+        width: $number-size;
+        height: $number-size;
+        border-radius: $number-size;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: $number-size / 2;
+        color: white;
+        font-weight: bold;
+    }
+
+    &__content {
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        height: 50px;
+        background-color: #eee;
+        border-radius: 20px;
+        box-shadow: 0 5px 5px $shadow-color;
+
+        &:hover {
+            background-color: lighten($color: $secondary-color, $amount: 20%);
+        }
+
+        &__icon {
+            margin: 0 15px 0 20px;
+        }
+    }
+}

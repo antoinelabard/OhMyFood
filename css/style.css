@@ -14,7 +14,7 @@ body {
 
 header {
   height: 50px;
-  box-shadow: 0 5px 5px #bbb;
+  box-shadow: 0 5px 5px #ccc;
 }
 header #logo {
   display: flex;
@@ -23,6 +23,42 @@ header #logo {
 }
 header #logo img {
   height: 40px;
+}
+
+.instruction-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.instruction-card__number {
+  background-color: #FF79DA;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 12.5px;
+  color: white;
+  font-weight: bold;
+}
+.instruction-card__content {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #ccc;
+}
+.instruction-card__content:hover {
+  background-color: #ffdff6;
+}
+.instruction-card__content__icon {
+  margin: 0 15px 0 20px;
 }
 
 #description {
