@@ -26,13 +26,13 @@
         text-decoration: none;
         padding: 0 5% 0 5%;
         border-radius: 25px;
-        background-color: #FF79DA;
+        background-color: $secondary-color;
         display: inline-flex;
         align-items: center;
         color: white;
 
         &:hover {
-            background-color: darken($color: #ff79da, $amount: 20%);
+            background-color: darken($color: $secondary-color, $amount: 20%);
         }
     }
 }
