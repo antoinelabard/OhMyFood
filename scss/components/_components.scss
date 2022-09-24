@@ -28,7 +28,7 @@
         height: 60px;
         background-color: #eee;
         border-radius: 20px;
-        box-shadow: 0 5px 5px $shadow-color;
+        @include box-shadow;
 
         &:hover {
             background-color: lighten($color: $secondary-color, $amount: 20%);

@@ -15,7 +15,7 @@ body {
 
 header {
     height: 50px;
-    box-shadow: 0 5px 5px $shadow-color;
+    @include box-shadow;
     #logo {
         display: flex;
         align-items: center;
