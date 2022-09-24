@@ -13,6 +13,9 @@ body {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 50px;
   box-shadow: 0 5px 5px #ccc;
 }
@@ -166,6 +169,11 @@ footer img {
 
 #instructions, #restaurants {
   padding: 20px;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
