@@ -10,9 +10,9 @@ body > img {
 
 #menu {
     width: 100%;
-    height: 200px;
-    background-color: white;
+    background-color: $grey-background;
     border-radius: 40px;
     position: relative;
     top: -40px;
+    padding: 15px;
 }
