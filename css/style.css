@@ -1,4 +1,4 @@
-@import "normalize.css";
+@import "vendors/normalize.css";
 @font-face {
   font-family: "Shrikhand";
   src: url("../../fonts/Shrikhand-Regular.ttf") format("truetype");
@@ -23,6 +23,32 @@ header #logo {
 }
 header #logo img {
   height: 40px;
+}
+
+footer {
+  background-color: #555;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 30px;
+}
+footer img {
+  width: 100px;
+  filter: invert(100%) sepia(96%) saturate(0%) hue-rotate(6deg) brightness(110%) contrast(101%);
+  margin-bottom: 20px;
+}
+
+.footer__element {
+  margin: 5px 0 5px 0;
+  position: relative;
+  text-decoration: none;
+}
+.footer__element span {
+  position: absolute;
+  left: 30px;
+}
+.footer__element:visited {
+  color: white;
 }
 
 .instruction-card {
@@ -100,32 +126,6 @@ header #logo img {
 }
 .restaurant-card__content i:hover {
   color: #FF79DA;
-}
-
-footer {
-  background-color: #555;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  padding: 30px;
-}
-footer img {
-  width: 100px;
-  filter: invert(100%) sepia(96%) saturate(0%) hue-rotate(6deg) brightness(110%) contrast(101%);
-  margin-bottom: 20px;
-}
-
-.footer__element {
-  margin: 5px 0 5px 0;
-  position: relative;
-  text-decoration: none;
-}
-.footer__element span {
-  position: absolute;
-  left: 30px;
-}
-.footer__element:visited {
-  color: white;
 }
 
 #description {
