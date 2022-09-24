@@ -1,11 +1,13 @@
 .instruction-card {
+    $number-size: 25px;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 5% 0 5% 0;
+    position: relative;
+    padding-left: calc($number-size / 2);
 
     &__number {
-        $number-size: 25px;
         background-color: $secondary-color;
         width: $number-size;
         height: $number-size;
@@ -13,8 +15,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
-        left: calc($number-size / 2);
+        position: absolute;
+        left: 0;
         color: white;
         font-weight: bold;
     }
@@ -43,7 +45,7 @@
 .restaurant-card {
     border-radius: 20px;
     @include box-shadow;
-    margin: 20px;
+    margin: 20px 0 20px 0;
 
     &__cover {
         width: 100%;

@@ -30,6 +30,8 @@ header #logo img {
   flex-direction: row;
   align-items: center;
   margin: 5% 0 5% 0;
+  position: relative;
+  padding-left: 12.5px;
 }
 .instruction-card__number {
   background-color: #FF79DA;
@@ -39,8 +41,8 @@ header #logo img {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  left: 12.5px;
+  position: absolute;
+  left: 0;
   color: white;
   font-weight: bold;
 }
@@ -65,7 +67,7 @@ header #logo img {
 .restaurant-card {
   border-radius: 20px;
   box-shadow: 0 5px 5px #ccc;
-  margin: 20px;
+  margin: 20px 0 20px 0;
 }
 .restaurant-card__cover {
   width: 100%;
@@ -160,6 +162,10 @@ footer img {
 }
 #description__explore-btn:hover {
   background-color: #ff13be;
+}
+
+#instructions, #restaurants {
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
