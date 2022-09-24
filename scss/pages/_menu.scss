@@ -2,3 +2,17 @@
     position: absolute;
     left: 20px;
 }
+
+body > img {
+    object-fit: cover;
+    width: 100%;
+}
+
+#menu {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border-radius: 40px;
+    position: relative;
+    top: -40px;
+}
