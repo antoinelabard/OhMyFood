@@ -200,11 +200,34 @@ body > img {
 
 #menu {
   width: 100%;
-  background-color: #ccc;
+  background-color: #eee;
   border-radius: 40px;
   position: relative;
   top: -40px;
   padding: 15px;
+  box-sizing: border-box;
+}
+#menu i {
+  position: absolute;
+  font-size: 1.5em;
+  top: 40px;
+  right: 40px;
+}
+#menu h1 {
+  font-family: Shrikhand;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+#menu section > h2 {
+  font-size: 1em;
+  display: inline-flex;
+  flex-direction: column;
+}
+#menu section > h2::after {
+  content: "";
+  width: 40px;
+  height: 5px;
+  background-color: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */

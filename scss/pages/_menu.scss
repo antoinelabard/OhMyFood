@@ -3,7 +3,7 @@
     left: 20px;
 }
 
-body > img {
+body>img {
     object-fit: cover;
     width: 100%;
 }
@@ -15,4 +15,32 @@ body > img {
     position: relative;
     top: -40px;
     padding: 15px;
+    box-sizing: border-box;
+
+    i {
+        position: absolute;
+        font-size: 1.5em;
+        top: 40px;
+        right: 40px;
+    }
+
+    h1 {
+        font-family: Shrikhand;
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+
+    section > h2 {
+        font-size: 1em;
+        display: inline-flex;
+        flex-direction: column;
+
+        &::after {
+            content: "";
+            width: 40px;
+            height: 5px;
+            background-color: $tertiary-color;
+        }
+
+    }
 }
