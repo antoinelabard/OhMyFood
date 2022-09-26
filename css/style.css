@@ -25,7 +25,7 @@ header #logo {
   justify-content: center;
 }
 header #logo img {
-  height: 40px;
+  height: 1.5em;
 }
 
 footer {
@@ -191,6 +191,7 @@ footer img {
 .fa-arrow-left {
   position: absolute;
   left: 20px;
+  font-size: 1.5em;
 }
 
 body > img {
