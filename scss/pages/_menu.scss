@@ -44,3 +44,18 @@ body>img {
 
     }
 }
+
+#order-btn {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+
+    button {
+        width: 150px;
+        height: 40px;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        background-image: linear-gradient($secondary-color, $primary-color);
+    }
+}

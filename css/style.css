@@ -230,4 +230,18 @@ body > img {
   background-color: #99E2D0;
 }
 
+#order-btn {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+}
+#order-btn button {
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
 /*# sourceMappingURL=style.css.map */
