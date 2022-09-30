@@ -24,7 +24,7 @@ header {
     justify-content: center;
     height: 50px;
     @include box-shadow;
-    #logo {
+    .logo {
         display: flex;
         align-items: center;
         justify-content: center;

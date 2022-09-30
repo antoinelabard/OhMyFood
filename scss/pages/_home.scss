@@ -1,4 +1,4 @@
-#description {
+.description {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -40,6 +40,6 @@
     }
 }
 
-#instructions, #restaurants {
+.instructions, .restaurants {
     padding: 20px;
 }

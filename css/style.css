@@ -24,12 +24,12 @@ header {
   height: 50px;
   box-shadow: 0 5px 5px #ccc;
 }
-header #logo {
+header .logo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-header #logo img {
+header .logo img {
   height: 1.5em;
 }
 
@@ -153,7 +153,7 @@ footer img {
   right: 20px;
 }
 
-#description {
+.description {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -161,21 +161,21 @@ footer img {
   text-align: center;
   width: 100%;
 }
-#description__location {
+.description__location {
   background-color: #eee;
   width: 100%;
   height: 50px;
   z-index: -1;
 }
-#description h1 {
+.description h1 {
   margin: 10% 15% 0 15%;
   text-align: center;
 }
-#description__tagline {
+.description__tagline {
   color: #555;
   margin: 5% 15% 5% 15%;
 }
-#description__explore-btn {
+.description__explore-btn {
   height: 50px;
   text-decoration: none;
   padding: 0 5% 0 5%;
@@ -185,11 +185,11 @@ footer img {
   align-items: center;
   color: white;
 }
-#description__explore-btn:hover {
+.description__explore-btn:hover {
   background-color: #ff13be;
 }
 
-#instructions, #restaurants {
+.instructions, .restaurants {
   padding: 20px;
 }
 
@@ -208,7 +208,7 @@ body {
   background-color: #eee;
 }
 
-#menu {
+.menu {
   width: 100%;
   border-radius: 40px 40px 0 0;
   background-color: #eee;
@@ -217,24 +217,24 @@ body {
   padding: 15px;
   box-sizing: border-box;
 }
-#menu i {
+.menu i {
   position: absolute;
   font-size: 1.5em;
   top: 40px;
   right: 40px;
 }
-#menu h1 {
+.menu h1 {
   font-family: Shrikhand;
   margin-top: 20px;
   font-size: 1.5em;
 }
-#menu h2 {
+.menu h2 {
   font-size: 1em;
   display: inline-flex;
   flex-direction: column;
   font-weight: lighter;
 }
-#menu h2::after {
+.menu h2::after {
   content: "";
   width: 40px;
   height: 5px;
