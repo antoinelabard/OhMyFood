@@ -4,7 +4,7 @@
     font-size: 1.5em;
 }
 
-body img {
+main>img {
     object-fit: cover;
     width: 100%;
 }
@@ -15,7 +15,6 @@ body {
 
 #menu {
     width: 100%;
-    background-color: $grey-background;
     border-radius: 40px 40px 0 0;
     position: relative;
     top: -40px;
