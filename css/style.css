@@ -184,12 +184,26 @@ footer img {
   display: inline-flex;
   align-items: center;
   color: white;
+  z-index: 1;
+  position: relative;
 }
-.description__explore-btn:hover {
-  background-color: #ff13be;
+.description__explore-btn--bg {
+  background-color: #ff93e1;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+.description__explore-btn:hover .description__explore-btn--bg {
+  opacity: 1;
 }
 
-.instructions, .restaurants {
+.instructions,
+.restaurants {
   padding: 20px;
 }
 
