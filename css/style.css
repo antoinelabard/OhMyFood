@@ -241,12 +241,12 @@ body {
   background-color: #99E2D0;
 }
 
-#order-btn {
+.order-btn {
   display: flex;
   justify-content: center;
   margin: 50px 0 50px 0;
 }
-#order-btn .order-btn__link {
+.order-btn__link {
   width: 150px;
   height: 40px;
   display: flex;
@@ -255,7 +255,22 @@ body {
   border-radius: 25px;
   border: none;
   color: white;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
+  position: relative;
+  z-index: 1;
+}
+.order-btn__link--bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 25px;
+  z-index: -1;
+  background: linear-gradient(#ff93e1, #a16be0);
+  opacity: 0;
+  transition: opacity 250ms;
+}
+.order-btn__link:hover .order-btn__link--bg {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
