@@ -51,9 +51,12 @@ body img {
     justify-content: center;
     margin: 50px 0 50px 0;
 
-    button {
+    .order-btn__link {
         width: 150px;
         height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 25px;
         border: none;
         color: white;
