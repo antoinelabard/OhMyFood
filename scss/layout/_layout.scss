@@ -79,24 +79,26 @@
         padding: 0 20px 0 20px;
         position: relative;
 
-        .fa-heart {
+        .favorite-icon {
             font-size: 24px;
             position: absolute;
             top: 20px;
             right: 30px;
             transform-origin: 50% 0%;
-            :hover {
-                .favorite-icon-active {
-
-                }
-            }
+            background-color: $grey-background;
+            color: red;
         }
 
-        .favorite-icon-active {
-            color: red;
-            height: 10px;
+        .icon-inactive {
+            color: black;
             overflow: hidden;
-            &:hover {
+            height: 24px;
+            transition: height 250ms ease-in-out;
+            animation-fill-mode: both;
+        }
+        .like-btn:active {
+            .icon-inactive {
+                height: 0;
             }
         }
     }
