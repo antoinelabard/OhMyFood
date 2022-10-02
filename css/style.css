@@ -55,13 +55,11 @@ footer img {
   margin: 5px 0 5px 0;
   position: relative;
   text-decoration: none;
+  color: white;
 }
 .footer__element span {
   position: absolute;
   left: 30px;
-}
-.footer__element:visited {
-  color: white;
 }
 
 .instruction-card {

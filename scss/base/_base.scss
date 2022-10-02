@@ -57,13 +57,10 @@ footer {
     margin: 5px 0 5px 0;
     position: relative;
     text-decoration: none;
+    color: white;
 
     span {
         position: absolute;
         left: 30px;
-    }
-
-    &:visited {
-        color: white;
     }
 }
