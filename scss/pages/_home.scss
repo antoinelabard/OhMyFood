@@ -38,6 +38,7 @@
 
         &--bg {
             background-color: lighten($secondary-color, 5%);
+            @include box-shadow;
             position: absolute;
             left: 0;
             height: 100%;

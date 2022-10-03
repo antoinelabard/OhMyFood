@@ -206,6 +206,7 @@ footer img {
 }
 .description__explore-btn--bg {
   background-color: #ff93e1;
+  box-shadow: 0 5px 5px #ccc;
   position: absolute;
   left: 0;
   height: 100%;
@@ -294,6 +295,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
+  box-shadow: 0 5px 5px #ccc;
   border-radius: 25px;
   z-index: -1;
   background: linear-gradient(#ff93e1, #a16be0);
