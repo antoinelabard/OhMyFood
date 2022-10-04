@@ -211,7 +211,7 @@ footer img {
   font-size: 1em;
   z-index: 0;
   transform: rotate(0deg);
-  transition: width 250ms, transform 250ms;
+  transition: width 250ms;
 }
 .meal-card:hover .meal-card__info {
   margin-right: 50px;
@@ -219,6 +219,7 @@ footer img {
 .meal-card:hover .fa-circle-check {
   width: 50px;
   transform: rotate(360deg);
+  transition: width 250ms, transform 250ms;
 }
 
 .description {
