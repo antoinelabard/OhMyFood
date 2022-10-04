@@ -96,6 +96,7 @@
             transition: height 250ms ease-in-out;
             animation-fill-mode: both;
         }
+
         .like-btn:active {
             .icon-inactive {
                 height: 0;
@@ -115,16 +116,34 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    padding-right: 50px;
     position: relative;
 
-    p {
-        margin: 0;
+    &__name {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-shrink: 1;
+        width: 100%;
+
+        p {
+            margin: 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
     }
 
     &__price {
         position: absolute;
         bottom: 10px;
-        right: 20px;
+        right: 10px;
+        margin: 0;
     }
 }

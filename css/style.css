@@ -158,16 +158,33 @@ footer img {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+  padding-right: 50px;
   position: relative;
 }
-.meal-card p {
+.meal-card__name {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 1;
+  width: 100%;
+}
+.meal-card__name p {
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .meal-card__price {
   position: absolute;
   bottom: 10px;
-  right: 20px;
+  right: 10px;
+  margin: 0;
 }
 
 .description {
