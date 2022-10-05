@@ -1,4 +1,14 @@
 @import "vendors/normalize.css";
+@keyframes menu-loading {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 @font-face {
   font-family: "Shrikhand";
   src: url("../../fonts/Shrikhand-Regular.ttf") format("truetype");
@@ -359,6 +369,10 @@ body {
 }
 .order-btn__link:hover .order-btn__link--bg {
   opacity: 1;
+}
+
+.meal-list:hover {
+  animation: menu-loading 1s;
 }
 
 /*# sourceMappingURL=style.css.map */

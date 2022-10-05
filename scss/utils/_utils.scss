@@ -9,3 +9,14 @@ $grey-background: #eee;
 @mixin box-shadow {
     box-shadow: 0 5px 5px $shadow-color;
 }
+
+@keyframes menu-loading {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }   
+}

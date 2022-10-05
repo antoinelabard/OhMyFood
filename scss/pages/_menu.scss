@@ -88,3 +88,7 @@ body {
         }
     }
 }
+
+.meal-list:hover {
+    animation: menu-loading 1s;
+}
