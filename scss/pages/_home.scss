@@ -24,22 +24,13 @@
             width: $loading-spinner-radius;
             height: $loading-spinner-radius;
             border-radius: $loading-spinner-radius;
-            background-color: $tertiary-color;
-            background-image: linear-gradient(126deg, transparent 50%, white 50%),
-            linear-gradient(90deg, white 50%, transparent 50%);
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            &::before {
-                content: "";
-                $mask-radius: $loading-spinner-radius * .8;
-                width: $mask-radius;
-                height: $mask-radius;
-                border-radius: $mask-radius;
-                background-color: white;
-                z-index: 3;
+            border: 8px solid transparent;
+            border-top-color: $tertiary-color;
+            animation: spinner 1s infinite;
+        }
+        @keyframes spinner {
+            to {
+                transform: rotate(360deg);
             }
         }
     }
