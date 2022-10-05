@@ -1,5 +1,5 @@
 .loading-screen {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -15,19 +15,24 @@
         flex-direction: column;
         align-items: center;
 
+        img {
+            height: 2em;
+        }
+
         p {
             font-size: large;
         }
 
         &__spinner {
-            $loading-spinner-radius: 100px;
+            $loading-spinner-radius: 80px;
             width: $loading-spinner-radius;
             height: $loading-spinner-radius;
             border-radius: $loading-spinner-radius;
-            border: 8px solid transparent;
-            border-top-color: $tertiary-color;
-            animation: spinner 1s infinite;
+            border: 8px solid $tertiary-color;
+            border-top-color: transparent;
+            animation: spinner 1s infinite linear;
         }
+
         @keyframes spinner {
             to {
                 transform: rotate(360deg);
@@ -86,6 +91,7 @@
             opacity: 0;
             transition: opacity 250ms;
         }
+
         &:hover {
             .description__explore-btn--bg {
                 opacity: 1;
