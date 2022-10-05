@@ -114,11 +114,12 @@
 .meal-card {
     $transition-duration: 250ms;
     $add-animation-size: 50px;
+    $meal-card-height: 60px;
     background-color: white;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    height: 60px;
+    height: $meal-card-height;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -127,6 +128,7 @@
     overflow: hidden;
     background-color: $tertiary-color;
     align-items: center;
+    margin: 15px 0 15px 0;
 
     &__info {
         height: 100%;
@@ -163,7 +165,7 @@
     }
 
     .fa-circle-check {
-        height: 60px;
+        height: $meal-card-height;
         width: 0;
         border-radius: 0 15px 15px 0;
         display: flex;

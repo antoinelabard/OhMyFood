@@ -168,6 +168,7 @@ footer img {
   overflow: hidden;
   background-color: #99E2D0;
   align-items: center;
+  margin: 15px 0 15px 0;
 }
 .meal-card__info {
   height: 100%;
