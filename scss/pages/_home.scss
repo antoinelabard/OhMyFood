@@ -9,6 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: loading-screen 3s linear;
+    animation-fill-mode: forwards;
 
     .loading-widget {
         display: flex;
