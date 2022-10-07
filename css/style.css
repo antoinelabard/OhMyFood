@@ -1,4 +1,19 @@
 @import "vendors/normalize.css";
+@keyframes loading-screen {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 @font-face {
   font-family: "Shrikhand";
   src: url("../../fonts/Shrikhand-Regular.ttf") format("truetype");
@@ -117,7 +132,7 @@ footer img {
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
-.restaurant-card__cover::before {
+.restaurant-card__cover.new::before {
   content: "Nouveau";
   background-color: #99E2D0;
   color: #278870;
@@ -236,6 +251,8 @@ footer img {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: loading-screen 3s linear;
+  animation-fill-mode: forwards;
 }
 .loading-screen .loading-widget {
   display: flex;

@@ -16,7 +16,6 @@ $max-nb-meals: 4;
 // @keyframes meals-loading {
 //     @for $i from 1 to $max-nb-meals {
 //         .meal-card:nth-child($i) {
-
 //             0% {
 //                 transition-delay: $i * 100ms;
 //                 transform: translateY(50px);
@@ -30,3 +29,22 @@ $max-nb-meals: 4;
 //         }
 //     }
 // }
+
+@keyframes loading-screen {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
