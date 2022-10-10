@@ -1,34 +1,4 @@
 @import "vendors/normalize.css";
-@keyframes meals-loading {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-@keyframes loading-screen {
-  0% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-    z-index: 2;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-    z-index: -2;
-  }
-}
 @font-face {
   font-family: "Shrikhand";
   src: url("../../fonts/Shrikhand-Regular.ttf") format("truetype");
@@ -73,12 +43,27 @@ footer {
   background-color: #555;
   display: flex;
   flex-direction: column;
-  color: white;
   padding: 30px;
 }
-footer > article {
+footer div {
   display: flex;
   flex-direction: column;
+}
+footer div footer-element {
+  margin: 5px 0 5px 0;
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+footer div footer-element span {
+  position: absolute;
+  left: 30px;
+}
+@media screen and (min-width: 768px) {
+  footer div {
+    width: 200px;
+    align-self: center;
+  }
 }
 footer img {
   width: 100px;
@@ -86,12 +71,6 @@ footer img {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  footer > article {
-    width: 200px;
-    align-self: center;
-  }
-}
 .instruction-card {
   display: flex;
   flex-direction: row;
@@ -289,7 +268,7 @@ footer img {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loading-screen 3s linear;
+  animation: loading-screen--vanish 3s linear;
   animation-fill-mode: forwards;
 }
 .loading-screen .loading-widget {
@@ -309,11 +288,31 @@ footer img {
   border-radius: 80px;
   border: 8px solid #99E2D0;
   border-top-color: transparent;
-  animation: spinner 1s infinite linear;
+  animation: spinner--rotation 1s infinite linear;
 }
-@keyframes spinner {
+@keyframes spinner--rotation {
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes loading-screen--vanish {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -2;
   }
 }
 
@@ -367,8 +366,7 @@ footer img {
   opacity: 1;
 }
 
-.instructions,
-.restaurants {
+.instructions, .restaurants {
   padding: 20px;
 }
 
@@ -511,6 +509,16 @@ body {
   animation-fill-mode: backwards;
 }
 
+@keyframes meals-loading {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 768px) {
   main > img {
     object-fit: cover;
