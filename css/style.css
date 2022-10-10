@@ -374,9 +374,11 @@ footer img {
     flex-wrap: wrap;
   }
 }
-.fa-arrow-left {
+.return-btn {
   position: absolute;
   left: 20px;
+}
+.return-btn i {
   font-size: 1.5em;
 }
 
