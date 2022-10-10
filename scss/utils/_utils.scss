@@ -18,13 +18,13 @@ $max-nb-meals: 5;
 }
 
 @mixin desktop-tablet-display {
-    @include desktop-tablet-display {
+    @media screen and (min-width: 768px) {
         @content;
     }
 }
 
 @mixin mobile-display {
-    @include mobile-display {
+    @media screen and (max-width: 767px) {
         @content;
     }
 }
