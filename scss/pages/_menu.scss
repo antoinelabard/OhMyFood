@@ -52,7 +52,7 @@ body {
         }
     }
 
-    @include like-btn;
+    @include like-btn--onlike;
 }
 
 .order-btn {
@@ -103,7 +103,19 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@keyframes meals-loading {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@include desktop-tablet-display {
     main>img {
         object-fit: cover;
         width: 100%;

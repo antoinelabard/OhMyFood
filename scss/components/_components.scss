@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    @include box-shadow;
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            height: 1.5em;
+        }
+    }
+}
+
+footer {
+    background-color: #555;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 30px;
+
+    & > article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 100px;
+        filter: invert(100%) sepia(96%) saturate(0%) hue-rotate(6deg) brightness(110%) contrast(101%); // According to this answer: https://stackoverflow.com/a/53336754
+        margin-bottom: 20px;
+    }
+
+    @include desktop-tablet-display {
+        & > article {
+            width: 200px;
+            align-self: center;
+        }
+    }
+}
+
+.footer__element {
+    margin: 5px 0 5px 0;
+    position: relative;
+    text-decoration: none;
+    color: white;
+
+    span {
+        position: absolute;
+        left: 30px;
+    }
+}

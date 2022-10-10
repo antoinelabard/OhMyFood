@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: loading-screen 3s linear;
+    animation: loading-screen--vanish 3s linear;
     animation-fill-mode: forwards;
 
     .loading-widget {
@@ -32,15 +32,41 @@
             border-radius: $loading-spinner-radius;
             border: 8px solid $tertiary-color;
             border-top-color: transparent;
-            animation: spinner 1s infinite linear;
+            animation: spinner--rotation 1s infinite linear;
         }
 
-        @keyframes spinner {
+        @keyframes spinner--rotation {
             to {
                 transform: rotate(360deg);
             }
         }
     }
+
+
+@keyframes loading-screen--vanish {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0;
+        z-index: 2;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: -2;
+    }
+}
 }
 
 .description {
@@ -102,8 +128,7 @@
     }
 }
 
-.instructions,
-.restaurants {
+.instructions, .restaurants {
     padding: 20px;
 }
 
