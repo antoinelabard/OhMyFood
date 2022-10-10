@@ -7,7 +7,7 @@ $grey-text: #eee;
 $grey-background: #eee;
 
 // It is not possible to get the number of meals dynamically without JS, so it is arbritrary.
-$max-nb-meals: 4;
+$max-nb-meals: 5;
 
 @mixin box-shadow {
     box-shadow: 0 5px 5px $shadow-color;

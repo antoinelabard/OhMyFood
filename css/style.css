@@ -489,6 +489,11 @@ body {
   animation-delay: 550ms;
   animation-fill-mode: backwards;
 }
+.meal-list .meal-card:nth-child(4) {
+  animation: meals-loading 1s;
+  animation-delay: 650ms;
+  animation-fill-mode: backwards;
+}
 
 @media screen and (min-width: 768px) {
   main > img {
