@@ -76,6 +76,10 @@ footer {
   color: white;
   padding: 30px;
 }
+footer > article {
+  display: flex;
+  flex-direction: column;
+}
 footer img {
   width: 100px;
   filter: invert(100%) sepia(96%) saturate(0%) hue-rotate(6deg) brightness(110%) contrast(101%);
@@ -93,11 +97,17 @@ footer img {
   left: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  footer > article {
+    width: 200px;
+    align-self: center;
+  }
+}
 .instruction-card {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 5% 0 5% 0;
+  margin: 20px 0 20px 0;
   position: relative;
   padding-left: 12.5px;
 }
@@ -182,6 +192,12 @@ footer img {
 }
 .restaurant-card__content .like-btn:active .icon-inactive {
   height: 0;
+}
+@media screen and (min-width: 768px) {
+  .restaurant-card {
+    width: 400px;
+    margin: 10px;
+  }
 }
 
 .meal-card {
@@ -309,17 +325,17 @@ footer img {
   z-index: -1;
 }
 .description h1 {
-  margin: 10% 15% 0 15%;
+  margin: 50px 15px 0 15px;
   text-align: center;
 }
 .description__tagline {
   color: #555;
-  margin: 5% 15% 5% 15%;
+  margin: 20px 15px 20px 15px;
 }
 .description__explore-btn {
   height: 50px;
   text-decoration: none;
-  padding: 0 5% 0 5%;
+  padding: 0 20px 0 20px;
   border-radius: 25px;
   background-color: #FF79DA;
   display: inline-flex;
@@ -349,6 +365,15 @@ footer img {
   padding: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .restaurants-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 .fa-arrow-left {
   position: absolute;
   left: 20px;

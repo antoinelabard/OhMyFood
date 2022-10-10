@@ -59,20 +59,20 @@
     }
 
     & h1 {
-        margin: 10% 15% 0 15%;
+        margin: 50px 15px 0 15px;
         text-align: center;
     }
 
     &__tagline {
         color: #555;
-        margin: 5% 15% 5% 15%;
+        margin: 20px 15px 20px 15px;
 
     }
 
     &__explore-btn {
         height: 50px;
         text-decoration: none;
-        padding: 0 5% 0 5%;
+        padding: 0 20px 0 20px;
         border-radius: 25px;
         background-color: $secondary-color;
         display: inline-flex;
@@ -105,4 +105,15 @@
 .instructions,
 .restaurants {
     padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .restaurants-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }

@@ -47,6 +47,11 @@ footer {
     color: white;
     padding: 30px;
 
+    & > article {
+        display: flex;
+        flex-direction: column;
+    }
+
     img {
         width: 100px;
         filter: invert(100%) sepia(96%) saturate(0%) hue-rotate(6deg) brightness(110%) contrast(101%); // According to this answer: https://stackoverflow.com/a/53336754
@@ -63,5 +68,12 @@ footer {
     span {
         position: absolute;
         left: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer > article {
+        width: 200px;
+        align-self: center;
     }
 }
