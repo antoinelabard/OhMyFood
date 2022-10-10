@@ -89,6 +89,12 @@ body {
     }
 }
 
-// .meal-list:hover {
-//     animation: meals-loading 1s;
-// }
+.meal-list {
+    @for $i from 1 to $max-nb-meals {
+        .meal-card:nth-child(#{$i}) {
+            animation: meals-loading 1s ;
+            animation-delay: $i * 100ms + 250ms;
+            animation-fill-mode: backwards;
+        }
+    }
+}
