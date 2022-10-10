@@ -107,8 +107,7 @@
     padding: 20px;
 }
 
-@media screen and (min-width: 768px) {
-
+@include desktop-tablet-display {
     .restaurants-list {
         display: flex;
         flex-direction: row;

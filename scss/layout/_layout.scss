@@ -81,7 +81,7 @@
         @include like-btn;
     }
 
-    @media screen and (min-width: 768px) {
+    @include desktop-tablet-display {
         width: 400px;
         margin: 10px;
     }
@@ -173,5 +173,17 @@
             transform: rotate(360deg);
             transition: width $transition-duration, transform $transition-duration;
         }
+    }
+}
+
+.footer__element {
+    margin: 5px 0 5px 0;
+    position: relative;
+    text-decoration: none;
+    color: white;
+
+    span {
+        position: absolute;
+        left: 30px;
     }
 }

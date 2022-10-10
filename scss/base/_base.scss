@@ -71,7 +71,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 768px) {
+@include desktop-tablet-display {
     footer > article {
         width: 200px;
         align-self: center;

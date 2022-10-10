@@ -13,6 +13,19 @@ $max-nb-meals: 5;
     box-shadow: 0 5px 5px $shadow-color;
 }
 
+@mixin desktop-tablet-display {
+    @include desktop-tablet-display {
+        @content;
+    }
+}
+
+@mixin mobile-display {
+    @include mobile-display {
+        @content;
+    }
+}
+
+
 @mixin like-btn {
     .favorite-icon {
         font-size: 24px;
@@ -32,15 +45,15 @@ $max-nb-meals: 5;
         animation-fill-mode: both;
     }
 
-    @media screen and (min-width: 768px) {
+    @include desktop-tablet-display {
         .like-btn:hover {
             .icon-inactive {
                 height: 0;
             }
         }
     }
-    
-    @media screen and (max-width: 767px) {
+
+    @include mobile-display {
         .like-btn:active {
             .icon-inactive {
                 height: 0;
