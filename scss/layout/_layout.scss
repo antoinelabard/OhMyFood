@@ -10,7 +10,7 @@
     padding-left: calc($number-size / 2);
 
     &__number {
-        background-color: $secondary-color;
+        background-color: $primary-color;
         width: $number-size;
         height: $number-size;
         border-radius: $number-size;
@@ -35,7 +35,7 @@
         @include box-shadow;
 
         &:hover {
-            background-color: lighten($color: $secondary-color, $amount: 20%);
+            background-color: lighten($color: $primary-color, $amount: 33%);
         }
 
         &__icon {
