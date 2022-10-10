@@ -32,9 +32,19 @@ $max-nb-meals: 5;
         animation-fill-mode: both;
     }
 
-    .like-btn:active {
-        .icon-inactive {
-            height: 0;
+    @media screen and (min-width: 768px) {
+        .like-btn:hover {
+            .icon-inactive {
+                height: 0;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        .like-btn:active {
+            .icon-inactive {
+                height: 0;
+            }
         }
     }
 }
