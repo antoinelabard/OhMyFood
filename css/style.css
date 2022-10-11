@@ -211,6 +211,7 @@ footer img {
 .meal-card__name p {
   margin: 0;
   text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -410,7 +411,7 @@ body {
   position: absolute;
   font-size: 1.5em;
   top: 20px;
-  right: 20px;
+  right: 0;
 }
 .menu h1 {
   font-family: Shrikhand;
