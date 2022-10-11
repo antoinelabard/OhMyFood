@@ -43,30 +43,30 @@
     }
 
 
-@keyframes loading-screen--vanish {
-    0% {
-        opacity: 0;
-    }
+    @keyframes loading-screen--vanish {
+        0% {
+            opacity: 0;
+        }
 
-    5% {
-        opacity: 1;
-    }
+        5% {
+            opacity: 1;
+        }
 
-    90% {
-        opacity: 1;
-    }
+        90% {
+            opacity: 1;
+        }
 
-    99% {
-        opacity: 0;
-        z-index: 2;
-    }
+        99% {
+            opacity: 0;
+            z-index: 2;
+        }
 
-    100% {
-        opacity: 0;
-        display: none;
-        z-index: -2;
+        100% {
+            opacity: 0;
+            display: none;
+            z-index: -2;
+        }
     }
-}
 }
 
 .description {
@@ -128,7 +128,8 @@
     }
 }
 
-.instructions, .restaurants {
+.instructions,
+.restaurants {
     padding: 20px;
 }
 

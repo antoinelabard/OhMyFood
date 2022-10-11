@@ -366,7 +366,8 @@ footer img {
   opacity: 1;
 }
 
-.instructions, .restaurants {
+.instructions,
+.restaurants {
   padding: 20px;
 }
 
