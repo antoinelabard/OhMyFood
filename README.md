@@ -15,7 +15,7 @@ The website sit hosted by GitHub pages at this address : [https://antoinelabard.
     - Load spinner when loading the main page.
     - Like buttons filling with red.
     - Menu displaying when loading a menu page.
-    - Meal card animation when adding to cart
+    - Meal card animation when adding to cart.
 
 ## Technologies and tools
 
