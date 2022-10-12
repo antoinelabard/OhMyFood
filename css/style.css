@@ -109,6 +109,13 @@ footer img {
 .instruction-card__content__icon {
   margin: 0 15px 0 20px;
 }
+@media screen and (min-width: 992px) {
+  .instruction-card {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 .restaurant-card {
   border-radius: 20px;
   box-shadow: 5px 2px 5px #ccc;
@@ -338,6 +345,7 @@ footer img {
   height: 50px;
   text-decoration: none;
   padding: 0 20px 0 20px;
+  margin: 40px;
   border-radius: 25px;
   background-color: #FF79DA;
   display: inline-flex;
@@ -367,12 +375,24 @@ footer img {
   padding: 20px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 992px) {
+  .instructions {
+    background-color: white;
+  }
   .instructions > div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
+  .restaurants-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurants-list {
     display: flex;
     flex-direction: row;

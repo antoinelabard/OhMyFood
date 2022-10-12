@@ -99,6 +99,7 @@
         height: 50px;
         text-decoration: none;
         padding: 0 20px 0 20px;
+        margin: 40px;
         border-radius: 25px;
         background-color: $secondary-color;
         display: inline-flex;
@@ -133,13 +134,27 @@
     padding: 20px;
 }
 
-@include tablet-display {
-    .instructions>div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+@include desktop-display {
+    .instructions {
+        background-color: white;
+
+        &>div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
     }
 
+    .restaurants-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@include tablet-display {
     .restaurants-list {
         display: flex;
         flex-direction: row;

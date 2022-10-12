@@ -24,7 +24,7 @@ $max-nb-meals: 5;
 }
 
 @mixin desktop-display {
-    @media screen and (min-width: 992) {
+    @media screen and (min-width: 992px) {
         @content;
     }
 }
