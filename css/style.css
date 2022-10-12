@@ -198,21 +198,22 @@ footer img {
   position: relative;
   background-color: white;
   margin-right: 0;
-  transition: margin-right 250ms;
+  transition: width 250ms;
   flex-shrink: 1;
 }
 .meal-card__name {
   padding: 10px;
-  margin-right: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .meal-card__name p {
   margin: 0;
+  width: 90%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  animation: width 250ms;
 }
 .meal-card__price {
   position: absolute;
@@ -238,10 +239,13 @@ footer img {
   transition: width 250ms;
 }
 .meal-card:hover .meal-card__info {
-  margin-right: 50px;
+  width: 80%;
+}
+.meal-card:hover .meal-card__name {
+  width: 80%;
 }
 .meal-card:hover .fa-circle-check {
-  width: 50px;
+  width: 20%;
   transform: rotate(360deg);
   transition: width 250ms, transform 250ms;
 }

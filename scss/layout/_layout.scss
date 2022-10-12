@@ -119,22 +119,23 @@
         position: relative;
         background-color: white;
         margin-right: 0;
-        transition: margin-right $transition-duration;
+        transition: width $transition-duration;
         flex-shrink: 1;
     }
 
     &__name {
         padding: 10px;
-        margin-right: $add-animation-size;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
         p {
             margin: 0;
+            width: 90%;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
+            animation: width $transition-duration;
         }
     }
 
@@ -165,11 +166,15 @@
 
     &:hover {
         .meal-card__info {
-            margin-right: $add-animation-size;
+            width: 80%;
+        }
+
+        .meal-card__name {
+            width: 80%;
         }
 
         .fa-circle-check {
-            width: $add-animation-size;
+            width: 20%;
             transform: rotate(360deg);
             transition: width $transition-duration, transform $transition-duration;
         }
