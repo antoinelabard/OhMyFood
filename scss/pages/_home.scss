@@ -133,7 +133,7 @@
     padding: 20px;
 }
 
-@include desktop-tablet-display {
+@include tablet-display {
     .instructions>div {
         display: flex;
         flex-direction: row;

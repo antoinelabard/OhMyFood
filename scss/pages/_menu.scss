@@ -115,7 +115,7 @@ body {
     }
 }
 
-@include desktop-tablet-display {
+@include tablet-display {
     main>img {
         object-fit: cover;
         width: 100%;

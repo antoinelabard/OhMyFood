@@ -59,7 +59,7 @@ footer div footer-element span {
   position: absolute;
   left: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   footer div {
     width: 250px;
     align-self: center;
@@ -109,7 +109,6 @@ footer img {
 .instruction-card__content__icon {
   margin: 0 15px 0 20px;
 }
-
 .restaurant-card {
   border-radius: 20px;
   box-shadow: 5px 2px 5px #ccc;
@@ -158,7 +157,7 @@ footer img {
   transition: height 250ms ease-in-out;
   animation-fill-mode: both;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurant-card__content .like-btn:hover .icon-inactive {
     height: 0;
   }
@@ -168,7 +167,7 @@ footer img {
     height: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurant-card {
     width: 40%;
     margin: 10px;
@@ -375,7 +374,7 @@ footer img {
   padding: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .instructions > div {
     display: flex;
     flex-direction: row;
@@ -454,7 +453,7 @@ body {
   transition: height 250ms ease-in-out;
   animation-fill-mode: both;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .menu .like-btn:hover .icon-inactive {
     height: 0;
   }
@@ -529,7 +528,7 @@ body {
     opacity: 1;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   main > img {
     object-fit: cover;
     width: 100%;

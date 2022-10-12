@@ -42,6 +42,11 @@
             margin: 0 15px 0 20px;
         }
     }
+
+    @include tablet-display {
+        // margin-left: 10px;
+        // margin-right: 10px;
+    }
 }
 
 .restaurant-card {
@@ -81,7 +86,7 @@
         @include like-btn--onlike;
     }
 
-    @include desktop-tablet-display {
+    @include tablet-display {
         width: 40%;
         margin: 10px;
     }

@@ -17,14 +17,20 @@ $max-nb-meals: 5;
     box-shadow: 5px 2px 5px $shadow-color;
 }
 
-@mixin desktop-tablet-display {
-    @media screen and (min-width: 768px) {
+@mixin mobile-display {
+    @media screen and (max-width: 767px) {
         @content;
     }
 }
 
-@mixin mobile-display {
-    @media screen and (max-width: 767px) {
+@mixin tablet-display {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin desktop-display {
+    @media screen and (min-width: 992) {
         @content;
     }
 }
@@ -48,7 +54,7 @@ $max-nb-meals: 5;
         animation-fill-mode: both;
     }
 
-    @include desktop-tablet-display {
+    @include tablet-display {
         .like-btn:hover {
             .icon-inactive {
                 height: 0;
