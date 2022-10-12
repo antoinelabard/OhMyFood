@@ -14,7 +14,7 @@ $max-nb-meals: 5;
 
 
 @mixin box-shadow {
-    box-shadow: 0 5px 5px $shadow-color;
+    box-shadow: 5px 2px 5px $shadow-color;
 }
 
 @mixin desktop-tablet-display {
