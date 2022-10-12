@@ -134,6 +134,12 @@
 }
 
 @include desktop-tablet-display {
+    .instructions>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
     .restaurants-list {
         display: flex;
         flex-direction: row;
