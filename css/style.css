@@ -157,15 +157,8 @@ footer img {
   transition: height 250ms ease-in-out;
   animation-fill-mode: both;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .restaurant-card__content .like-btn:hover .icon-inactive {
-    height: 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  .restaurant-card__content .like-btn:active .icon-inactive {
-    height: 0;
-  }
+.restaurant-card__content .like-btn:hover .icon-inactive {
+  height: 0;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurant-card {
@@ -453,15 +446,8 @@ body {
   transition: height 250ms ease-in-out;
   animation-fill-mode: both;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .menu .like-btn:hover .icon-inactive {
-    height: 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  .menu .like-btn:active .icon-inactive {
-    height: 0;
-  }
+.menu .like-btn:hover .icon-inactive {
+  height: 0;
 }
 
 .order-btn {

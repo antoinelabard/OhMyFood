@@ -17,12 +17,6 @@ $max-nb-meals: 5;
     box-shadow: 5px 2px 5px $shadow-color;
 }
 
-@mixin mobile-display {
-    @media screen and (max-width: 767px) {
-        @content;
-    }
-}
-
 @mixin tablet-display {
     @media screen and (min-width: 768px) and (max-width: 991px) {
         @content;
@@ -54,19 +48,9 @@ $max-nb-meals: 5;
         animation-fill-mode: both;
     }
 
-    @include tablet-display {
-        .like-btn:hover {
-            .icon-inactive {
-                height: 0;
-            }
-        }
-    }
-
-    @include mobile-display {
-        .like-btn:active {
-            .icon-inactive {
-                height: 0;
-            }
+    .like-btn:hover {
+        .icon-inactive {
+            height: 0;
         }
     }
 }
