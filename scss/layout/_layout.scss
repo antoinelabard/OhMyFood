@@ -90,6 +90,11 @@
         width: 40%;
         margin: 10px;
     }
+
+    @include desktop-display {
+        width: 400px;
+        margin: 20px;
+    }
 }
 
 

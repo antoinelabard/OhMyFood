@@ -173,6 +173,12 @@ footer img {
     margin: 10px;
   }
 }
+@media screen and (min-width: 992px) {
+  .restaurant-card {
+    width: 400px;
+    margin: 20px;
+  }
+}
 
 .meal-card {
   background-color: white;
