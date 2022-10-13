@@ -123,6 +123,7 @@ footer img {
 
 .restaurant-card {
   border-radius: 20px;
+  background-color: white;
   box-shadow: 5px 2px 5px #ccc;
   margin: 20px 0 20px 0;
 }
@@ -161,6 +162,7 @@ footer img {
   transform-origin: 50% 0%;
   background-color: #eee;
   color: red;
+  background-color: white;
 }
 .restaurant-card__content .icon-inactive {
   color: black;
@@ -485,6 +487,7 @@ body {
   transform-origin: 50% 0%;
   background-color: #eee;
   color: red;
+  background-color: white;
 }
 .menu .icon-inactive {
   color: black;

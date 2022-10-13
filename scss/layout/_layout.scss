@@ -30,7 +30,7 @@
         justify-content: start;
         align-items: center;
         height: 60px;
-        background-color: #eee;
+        background-color: $grey-background;
         border-radius: 20px;
         @include box-shadow;
 
@@ -55,6 +55,7 @@
 
 .restaurant-card {
     border-radius: 20px;
+    background-color: white;
     @include box-shadow;
     margin: 20px 0 20px 0;
 
