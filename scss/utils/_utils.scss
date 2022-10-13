@@ -29,6 +29,12 @@ $max-nb-meals: 5;
     }
 }
 
+@mixin wide-display {
+    @media screen and (min-width: 2000px) {
+        @content;
+    }
+}
+
 @mixin like-btn--onlike {
     .favorite-icon {
         font-size: 24px;

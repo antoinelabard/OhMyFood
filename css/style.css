@@ -121,6 +121,11 @@ footer img {
     margin-right: 10px;
   }
 }
+@media screen and (min-width: 2000px) {
+  .instruction-card {
+    margin: 30px;
+  }
+}
 
 .restaurant-card {
   border-radius: 20px;
@@ -183,6 +188,12 @@ footer img {
   .restaurant-card {
     width: 400px;
     margin: 20px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .restaurant-card {
+    width: 400px;
+    margin: 30px;
   }
 }
 
@@ -391,6 +402,20 @@ footer img {
   padding: 20px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .instructions > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .restaurants-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 992px) {
   .instructions > div {
     display: flex;
@@ -405,16 +430,16 @@ footer img {
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 2000px) {
   .instructions > div {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: start;
   }
   .restaurants-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
   }

@@ -47,6 +47,10 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    @include wide-display {
+        margin: 30px;
+    }
 }
 
 .restaurant-card {
@@ -94,6 +98,11 @@
     @include desktop-display {
         width: 400px;
         margin: 20px;
+    }
+
+    @include wide-display {
+        width: 400px;
+        margin: 30px;
     }
 }
 
