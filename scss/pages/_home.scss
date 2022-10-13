@@ -156,32 +156,23 @@
 
 @include desktop-display {
     .instructions>div {
-            display: flex;
             flex-direction: row;
             justify-content: space-evenly;
         }
 
     .restaurants-list {
-        display: flex;
-        flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        flex-wrap: wrap;
     }
 }
 
 @include wide-display {
     .instructions>div {
-        display: flex;
-        flex-direction: row;
         justify-content: start;
     }
 
     .restaurants-list {
-        display: flex;
-        flex-direction: row;
         justify-content: start;
         align-items: center;
-        flex-wrap: wrap;
     }
 }

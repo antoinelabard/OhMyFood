@@ -17,8 +17,15 @@ $max-nb-meals: 5;
     box-shadow: 5px 2px 5px $shadow-color;
 }
 
+
+
+
+
+// Media queries are set in "cascade" with only a minimum width, meaning that the wide screen overrides the desktop screen and so on.
+// It allow to reuse properties by refining them the more we have a wide screen
+
 @mixin tablet-display {
-    @media screen and (min-width: 768px) and (max-width: 991px) {
+    @media screen and (min-width: 768px) {
         @content;
     }
 }

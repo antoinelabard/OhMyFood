@@ -59,13 +59,7 @@ footer div footer-element span {
   position: absolute;
   left: 30px;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  footer div {
-    width: 250px;
-    align-self: center;
-  }
-}
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   footer div {
     width: 250px;
     align-self: center;
@@ -178,7 +172,7 @@ footer img {
 .restaurant-card__content .like-btn:hover .icon-inactive {
   height: 0;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
   .restaurant-card {
     width: 40%;
     margin: 10px;
@@ -192,7 +186,6 @@ footer img {
 }
 @media screen and (min-width: 2000px) {
   .restaurant-card {
-    width: 400px;
     margin: 30px;
   }
 }
@@ -402,7 +395,7 @@ footer img {
   padding: 20px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
   .instructions > div {
     display: flex;
     flex-direction: column;
@@ -418,30 +411,21 @@ footer img {
 }
 @media screen and (min-width: 992px) {
   .instructions > div {
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
   .restaurants-list {
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 2000px) {
   .instructions > div {
-    display: flex;
-    flex-direction: row;
     justify-content: start;
   }
   .restaurants-list {
-    display: flex;
-    flex-direction: row;
     justify-content: start;
     align-items: center;
-    flex-wrap: wrap;
   }
 }
 .return-btn {
@@ -577,7 +561,7 @@ body {
     opacity: 1;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
   main > img {
     object-fit: cover;
     width: 100%;
@@ -598,11 +582,6 @@ body {
   body {
     background-color: white;
   }
-  main > img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 520px;
-  }
   .menu {
     width: 95%;
     top: -80px;
@@ -610,40 +589,18 @@ body {
     margin-right: auto;
   }
   .menu > section {
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  .menu .meal-category {
-    margin: 10px;
-    width: 345px;
   }
 }
 @media screen and (min-width: 2000px) {
   body {
     background-color: white;
   }
-  main > img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 520px;
-  }
   .menu {
     width: 1300px;
     top: -80px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .menu > section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .menu .meal-category {
-    margin: 10px;
-    width: 345px;
   }
 }
 
