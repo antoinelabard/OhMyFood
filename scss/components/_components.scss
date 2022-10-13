@@ -42,6 +42,11 @@ footer {
             width: 250px;
             align-self: center;
         }
+
+        @include desktop-display {
+            width: 250px;
+            align-self: center;
+        }
     }
 
     img {
