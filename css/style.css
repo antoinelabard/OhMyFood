@@ -151,12 +151,14 @@ footer img {
 }
 .restaurant-card__cover.new::before {
   content: "Nouveau";
+  font-weight: bold;
   background-color: #99E2D0;
   color: #278870;
   position: absolute;
+  border-radius: 3px;
   top: 10%;
-  right: 5%;
-  padding: 0 5px 0 5px;
+  right: 5px;
+  padding: 8px 15px 8px 15px;
 }
 .restaurant-card__content {
   display: flex;

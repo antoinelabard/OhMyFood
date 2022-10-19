@@ -87,12 +87,14 @@
 
         &.new::before {
             content: "Nouveau";
+            font-weight: bold;
             background-color: $tertiary-color;
             color: darken($color: $tertiary-color, $amount: 40%);
             position: absolute;
+            border-radius: 3px;
             top: 10%;
-            right: 5%;
-            padding: 0 5px 0 5px;
+            right: 5px;
+            padding:  8px 15px 8px 15px;
         }
     }
 
