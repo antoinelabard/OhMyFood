@@ -73,6 +73,7 @@ footer img {
 
 .instruction-card {
   display: flex;
+  width: 95%;
   flex-direction: row;
   align-items: center;
   margin: 20px 0 20px 0;
@@ -93,7 +94,7 @@ footer img {
   font-weight: bold;
 }
 .instruction-card__content {
-  width: 300px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -106,8 +107,19 @@ footer img {
 .instruction-card__content:hover {
   background-color: #ece1f9;
 }
+.instruction-card__content:hover i {
+  color: #9356DC;
+}
 .instruction-card__content__icon {
   margin: 0 15px 0 20px;
+}
+.instruction-card__content i {
+  color: #555;
+}
+@media screen and (min-width: 768px) {
+  .instruction-card {
+    width: 300px;
+  }
 }
 @media screen and (min-width: 992px) {
   .instruction-card {
@@ -402,6 +414,11 @@ footer img {
 .instructions {
   background-color: white;
 }
+.instructions > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .instructions,
 .restaurants {
@@ -409,11 +426,6 @@ footer img {
 }
 
 @media screen and (min-width: 768px) {
-  .instructions > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .restaurants-list {
     display: flex;
     flex-direction: row;
