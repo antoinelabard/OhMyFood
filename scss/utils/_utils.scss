@@ -49,9 +49,13 @@ $max-nb-meals: 5;
         top: 20px;
         right: 30px;
         transform-origin: 50% 0%;
-        background-color: $grey-background;
-        color: red;
         background-color: white;
+    }
+
+    .icon-active {
+        background: linear-gradient($secondary-color, $primary-color);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .icon-inactive {

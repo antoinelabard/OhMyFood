@@ -101,7 +101,7 @@
         padding: 0 20px 0 20px;
         margin: 40px;
         border-radius: 25px;
-        background-color: $secondary-color;
+        background-image: linear-gradient($secondary-color, $primary-color);
         display: inline-flex;
         align-items: center;
         color: white;
@@ -109,7 +109,7 @@
         position: relative;
 
         &--bg {
-            background-color: lighten($secondary-color, 5%);
+            background-image: linear-gradient(lighten($secondary-color, 5%), lighten($primary-color,5%));
             @include box-shadow;
             position: absolute;
             left: 0;
